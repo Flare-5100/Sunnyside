@@ -414,17 +414,10 @@ footer > img {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
-    .client-testimonials {
-        flex-direction: row;
-    }
-}
-
 .attribution {
     margin-top: 2em;
     background-color: white;
     padding: 2.5em;
-    /* overflow: hidden; */
     border-radius: 50px;
 }
 
@@ -455,11 +448,9 @@ footer > img {
     text-decoration-color: #f9c7c5;
     transition: 500ms ease-in-out;
     opacity: 0;
-    display: none;
 }
 
 .attribution > a:hover::before {
     left: 0px;
     opacity: 1;
-    display: block;
 }
