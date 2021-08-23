@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow";
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url("assets/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.nav > img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    list-style: none;
+    font-family: Barlow;
+}
+
+.nav-items > a {
+    margin: auto 25px auto 25px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-items > a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.contact {
+    font-family: fraunces;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 25px;
+    cursor: pointer;
+    padding: 20px;
+    background: #fff;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 900;
+    transition: 250ms ease-in-out;
+}
+
+.contact:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "fraunces";
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family: "Fraunces";
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 250px;
+}
+
+.transform {
+    height: 500px;
+    font-family: "Barlow";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.transform > .left {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px;
+}
+
+.transform > .left > .title {
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.transform > .left > .description {
+    font-family: "Barlow";
+    color: hsl(232, 10%, 55%);
+    text-align: left;
+    font-size: 20px;
+}
+
+.transform > .left > .learn {
+    margin-top: 50px;
+    text-align: left;
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    width: 140px;
+    display: block;
+}
+
+.transform > .left > .learn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: -5px;
+    /* bottom : -20px;   For Bottom to Up Animation*/
+    bottom: -2.5px;
+    border-radius: 75px;
+    background: #fad400;
+    z-index: -9;
+    /* opacity: 0   For Bottom to Up Animation; */
+    opacity: 0.5;
+    transition: 300ms ease-in-out;
+}
+
+.transform > .left > .learn:hover::before {
+    /* bottom: -2.5px;  For Bottom to Up Animation*/
+    opacity: 1;
+}
+.transform > .right {
+    width: 50%;
+    height: 500px;
+    background-image: url("assets/image-transform.jpg");
+    background-repeat: no-repeat;
+}
+
+.stand-out {
+    height: 500px;
+    font-family: "Barlow";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.stand-out > .right {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px;
+}
+
+.stand-out > .right > .title {
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.stand-out > .right > .description {
+    font-family: "Barlow";
+    color: hsl(232, 10%, 55%);
+    text-align: left;
+    font-size: 20px;
+}
+
+.stand-out > .right > .learn {
+    margin-top: 50px;
+    text-align: left;
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    width: 140px;
+    display: block;
+}
+
+.stand-out > .right > .learn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: -5px;
+    /* bottom : -20px;   For Bottom to Up Animation*/
+    bottom: -2.5px;
+    border-radius: 75px;
+    background: #fe7867;
+    z-index: -9;
+    /* opacity: 0   For Bottom to Up Animation; */
+    opacity: 0.5;
+    transition: 300ms ease-in-out;
+}
+
+.stand-out > .right > .learn:hover::before {
+    /* bottom: -2.5px;  For Bottom to Up Animation*/
+    opacity: 1;
+}
+.stand-out > .left {
+    width: 50%;
+    height: 500px;
+    background-image: url("assets/image-stand-out.jpg");
+    background-repeat: no-repeat;
+}
+
+.difference {
+    height: 550px;
+    font-family: "Barlow";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.difference > .left {
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 90px;
+    background-image: url("assets/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+}
+
+.difference > .left > .title {
+    font-family: "Fraunces";
+    font-size: 40px;
+    position: absolute;
+    font-weight: 900;
+    margin-bottom: 30px;
+    bottom: 125px;
+    color: #25564b;
+}
+
+.difference > .left > .description {
+    font-family: "Barlow";
+    color: #25564b;
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    bottom: 75px;
+    padding: 0 150px 0 150px;
+}
+
+.difference > .right {
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 90px;
+    background-image: url("assets/image-photography.jpg");
+    background-repeat: no-repeat;
+}
+
+.difference > .right > .title {
+    font-family: "Fraunces";
+    font-size: 40px;
+    position: absolute;
+    font-weight: 900;
+    margin-bottom: 30px;
+    bottom: 125px;
+    color: #19536b;
+}
+
+.difference > .right > .description {
+    font-family: "Barlow";
+    color: #19536b;
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    bottom: 75px;
+    padding: 0 150px 0 150px;
+}
+
+.testimonials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.testimonials > .title {
+    margin-top: -15px;
+    font-size: 18px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: #a7abae;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.client-testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials > .client-testimonials > .client {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.client > .client-img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.client > .client-comment {
+    font-size: 18px;
+    text-align: center;
+    color: #818498;
+    padding: 0 15px 0 15px;
+    margin-bottom: 50px;
+}
+
+.client > .client-name {
+    font-family: "Fraunces";
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.client > .client-designation {
+    color: #a7abae;
+    font-size: 0.7em;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase > img {
+    width: 18.725em;
+}
+
+footer {
+    background: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.5em;
+    padding-bottom: 5em;
+}
+
+footer > .footer-links {
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+}
+
+footer > .footer-links > a {
+    text-decoration: none;
+    padding: 0.5em;
+    color: #2d7464;
+}
+
+footer > .social-media > img {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+footer > img {
+    height: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .client-testimonials {
+        flex-direction: row;
+    }
+}
+
+.attribution {
+    margin-top: 2em;
+    background-color: white;
+    padding: 2.5em;
+    /* overflow: hidden; */
+    border-radius: 50px;
+}
+
+.attribution > span {
+    overflow: hidden;
+}
+
+.attribution > a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+    width: 150px;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+
+.attribution > a::before {
+    content: "Front end Mentor";
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: -75px;
+    top: 0px;
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #f9c7c5;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+}
+
+.attribution > a:hover::before {
+    left: 0px;
+    opacity: 1;
+}
