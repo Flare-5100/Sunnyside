@@ -448,9 +448,11 @@ footer > img {
     text-decoration-color: #f9c7c5;
     transition: 500ms ease-in-out;
     opacity: 0;
+    visibility: hidden;
 }
 
 .attribution > a:hover::before {
     left: 0px;
     opacity: 1;
+    visibility: visible;
 }
