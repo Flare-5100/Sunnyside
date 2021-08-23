@@ -404,6 +404,11 @@ footer > .footer-links > a {
     color: #2d7464;
 }
 
+footer > .footer-links > a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 footer > .social-media > img {
     padding: 0.5em;
     cursor: pointer;
