@@ -449,7 +449,7 @@ body {
     color: #fff;
 }
 
-#footer > .social-media > svg {
+#footer > .social-media > i {
     margin: 0.5em;
     cursor: pointer;
     transition: 150ms ease-in-out;
@@ -457,7 +457,7 @@ body {
     font-size: 1.5em;
 }
 
-#footer > .social-media > svg:hover {
+#footer > .social-media > i:hover {
     color: white;
 }
 
