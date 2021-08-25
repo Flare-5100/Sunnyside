@@ -16,6 +16,14 @@
             <nav class="nav">
                 <img src="assets/logo.svg" alt="logo">
 
+                <button id="menu">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+
                 <ul class="nav-items">
                     <a href="#">About</a>
                     <a href="#">Services</a>
@@ -88,12 +96,16 @@
             </div>
         </section>
         <section class="showcase">
-            <img src="assets/image-gallery-milkbottles.jpg" alt="">
-            <img src="assets/image-gallery-orange.jpg" alt="">
-            <img src="assets/image-gallery-cone.jpg" alt="">
-            <img src="assets/image-gallery-sugarcubes.jpg" alt="">
+            <div class="row">
+                <div class="milkbottles"></div>
+                <div class="orange"></div><!-- -->
+            </div
+            ><div class="row">
+                <div class="cone"></div>
+                <div class="sugarcubes"></div><!-- -->
+            </div><!-- -->
         </section>
-        <footer>
+        <section id="footer">
             <img src="assets/footer-logo.svg" alt="logo">
 
             <ul class="footer-links">
@@ -114,7 +126,9 @@
                     Mentor</a>.
                 Coded by Vivek.
             </p>
-        </footer>
+        </section>
+
+        <script src="script.js" defer></script>
     </div>
 </body>
 
