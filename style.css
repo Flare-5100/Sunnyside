@@ -442,16 +442,23 @@ body {
     text-decoration: none;
     padding: 0.5em;
     color: #2d7464;
+    transition: 150ms ease-in-out;
 }
 
 #footer > .footer-links > a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    color: #fff;
 }
 
-#footer > .social-media > img {
-    padding: 0.5em;
+#footer > .social-media > svg {
+    margin: 0.5em;
     cursor: pointer;
+    transition: 150ms ease-in-out;
+    color: #2C7566;
+    font-size: 1.5em;
+}
+
+#footer > .social-media > svg:hover {
+    color: white;
 }
 
 #footer > img {
@@ -478,6 +485,7 @@ body {
     width: 150px;
     overflow: hidden;
     transition: 500ms ease-in-out;
+    color: blue;
 }
 
 .attribution > a::before {
@@ -606,6 +614,10 @@ body {
         transition: all 150ms ease-in-out;
     }
 
+    .hero-title{
+        text-align: center;
+    }
+
     .hero-title.visible,
     .down-arrow.visible {
         visibility: hidden;
@@ -727,25 +739,32 @@ body {
     /* Showcase Section */
     .showcase {
         flex-direction: column;
+        height: calc(241px * 2);
     }
     .showcase > .row {
         flex-direction: row;
         width: 100%;
+        height: 241px;
     }
-    .showcase > .row > div {
-        width: 50%;
-        background-size: cover;
+    .showcase > .row > .img {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 241px;
     }
     .cone{
-        background-image: url("assets/mobile/image-gallery-cone.jpg");
+        background-image: url("assets/mobile/image-gallery-cone.jpg") !important;
+        width: 50%;
     }
     .milkbottles{
-        background-image: url("assets/mobile/image-gallery-milkbottles.jpg");
+        background-image: url("assets/mobile/image-gallery-milkbottles.jpg") !important;
+        width: 50%;
     }
     .orange{
-        background-image: url("assets/mobile/image-gallery-orange.jpg");
+        background-image: url("assets/mobile/image-gallery-orange.jpg") !important;
+        width: 50%;
     }
     .sugarcubes{
-        background-image: url("assets/mobile/image-gallery-sugarcubes.jpg");
+        background-image: url("assets/mobile/image-gallery-sugarcubes.jpg") !important;
+        width: 50%;
     }
 }
