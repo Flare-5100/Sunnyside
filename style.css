@@ -449,7 +449,7 @@ body {
     color: #fff;
 }
 
-#footer > .social-media > i {
+#footer > .social-media > ion-icon {
     margin: 0.5em;
     cursor: pointer;
     transition: 150ms ease-in-out;
@@ -457,7 +457,7 @@ body {
     font-size: 1.5em;
 }
 
-#footer > .social-media > i:hover {
+#footer > .social-media > ion-icon:hover {
     color: white;
 }
 
