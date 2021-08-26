@@ -8,4 +8,5 @@ menu.addEventListener("click", (e) => {
     nav_items.classList.toggle("visible");
     hero_title.classList.toggle("visible");
     down_arrow.classList.toggle("visible");
-});
+}
+);

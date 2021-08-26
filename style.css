@@ -395,17 +395,17 @@ body {
     height: 418.7px;
 }
 
-.showcase > .row > div{
+.showcase > .row > div {
     background-size: cover;
     width: 50%;
     height: 100%;
 }
 
-.milkbottles{
+.milkbottles {
     background-image: url("assets/desktop/image-gallery-milkbottles.jpg");
 }
 
-.orange{
+.orange {
     background-image: url("assets/desktop/image-gallery-orange.jpg");
 }
 
@@ -453,7 +453,7 @@ body {
     margin: 0.5em;
     cursor: pointer;
     transition: 150ms ease-in-out;
-    color: #2C7566;
+    color: #2c7566;
     font-size: 1.5em;
 }
 
@@ -461,9 +461,19 @@ body {
     color: white;
 }
 
-#footer > img {
+#footer > #footer-logo {
     height: 2rem;
     cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+#footer-logo > path {
+    fill: #2c7566;
+    transition: 250ms ease-in-out;
+}
+
+#footer > #footer-logo:hover > path {
+    fill: #fff;
 }
 
 .attribution {
@@ -614,7 +624,7 @@ body {
         transition: all 150ms ease-in-out;
     }
 
-    .hero-title{
+    .hero-title {
         text-align: center;
     }
 
@@ -751,19 +761,19 @@ body {
         background-repeat: no-repeat;
         height: 241px;
     }
-    .cone{
+    .cone {
         background-image: url("assets/mobile/image-gallery-cone.jpg") !important;
         width: 50%;
     }
-    .milkbottles{
+    .milkbottles {
         background-image: url("assets/mobile/image-gallery-milkbottles.jpg") !important;
         width: 50%;
     }
-    .orange{
+    .orange {
         background-image: url("assets/mobile/image-gallery-orange.jpg") !important;
         width: 50%;
     }
-    .sugarcubes{
+    .sugarcubes {
         background-image: url("assets/mobile/image-gallery-sugarcubes.jpg") !important;
         width: 50%;
     }
